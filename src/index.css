@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-cyber-bg: #080808;
+  --color-cyber-card: #0f0f0f;
+  --color-cyber-border: #1a1a1a;
+  --color-cyber-accent: #d4af37;
+  --color-cyber-warning: #f59e0b;
+}
+
+/* Custom glow and terminal animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.8;
+    filter: drop-shadow(0 0 2px rgba(212, 175, 55, 0.4));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.8));
+  }
+}
+
+.glow-active {
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+/* Custom scrollbars for clean logs */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a2a2a;
+}

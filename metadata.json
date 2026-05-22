@@ -1,0 +1,6 @@
+{
+  "name": "Binance-OKX Arbitrage Bot",
+  "description": "High-performance multi-asset arbitrage trading bot between Binance and OKX featuring automated spread detection, instant order simulation, custom risk management, backtesting, AI-driven market sentiment analysis, and integrated Telegram notifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
